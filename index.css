@@ -14,10 +14,10 @@ header
     background-color: #0FA9EA;
 }
 
-li
+/*li
 {
     list-style: none;
-}
+}*/
 
 a
 {
@@ -28,7 +28,8 @@ a
 }
 h1
 {
-    text-transform: capitalize uppercase;
+    text-transform: capitalize;
+    text-transform: uppercase;
     word-spacing: 3px;
     letter-spacing: 3px;
 }
@@ -53,6 +54,10 @@ hr
     height: 80px;
     border-radius: 50%;
     padding: 5px 5px 5px 5px;
+}
+.navbar li
+{
+    list-style: none;
 }
 
 .nav-menu
@@ -242,12 +247,18 @@ hr
 .who-we-are
 {
     width: auto;
+    justify-content: center;
     background-color: #0FA9EA;
     margin: 2rem;
+    column-count: 2;
+    height: fit-content;
+    justify-content: space-around;
+    list-style: circle;
 }
 .who-we-are--title
 {
     text-align: center;
+    text-decoration: underline;
     text-transform: capitalize;
     text-transform: uppercase;
 }
@@ -258,11 +269,13 @@ hr
     margin: 1rem 1rem;
     text-align: center;
     text-transform: uppercase;
+    font-family: serif;
+    justify-content: space-evenly;
 }
 .who-we-are h3
 {
     word-spacing: 1px;
-    text-align: center;
+    text-align: left;
 }
 
 span
@@ -283,7 +296,7 @@ span
 }
 .event-calender img
 {
-    width: 100%;
+    float: right;
 }
 .wrapper
 {
@@ -504,22 +517,221 @@ span
     background: #0FA9EA;
 }
 
-.oppertunity
+.opportunity
 {
-    background-color: #0FA9EA;
     width: auto;
-    height: fit-content;
+    justify-content: center;
+    background-color: #0FA9EA;
     margin: 2rem;
+    column-count: 3;
+    height: fit-content;
+    justify-content: space-around;
+    list-style: circle;
 }
-
-.oppertunity-list
+.opportunity-img
+{
+    width: 100%;
+}
+.opportunity--title
 {
     text-align: center;
-}
-
-.oppertunity h1
-{
-    text-align: center;
+    margin-left: 3rem;
+    text-decoration: underline;
+    text-transform: capitalize;
     text-transform: uppercase;
 }
 
+.opportunity h4
+{
+    word-spacing: 1.5px;
+    margin-left: 3rem;
+    margin: 1rem 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: serif;
+    justify-content: space-evenly;
+}
+.opportunity h3
+{
+    word-spacing: 1px;
+    text-align: left;
+}
+.column 
+{
+    float: left;
+    width: auto;
+    height: fit-content;
+    background-color: #0FA9EA;
+    position: relative;
+    width: 50%;
+}
+  
+  /* Clear floats after the columns */
+.row:after 
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#calendar
+{
+    width: 80%;
+    position: relative;
+
+}
+
+.hero
+{
+    background-color: #0FA9EA;
+    margin: 1rem;
+}
+.hero h1
+{
+    text-align: center;
+}
+.membership
+{
+    width: auto;
+    justify-content: center;
+    background-color: #0FA9EA;
+    margin: 2rem;
+    column-count: 4;
+    height: fit-content;
+    justify-content: space-around;
+    list-style: circle;
+}
+
+.membership p
+{
+    float: right;
+}
+.membership--title
+{
+    text-align: center;
+    margin-left: 3rem;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-transform: uppercase;
+}
+
+.membership h4
+{
+    word-spacing: 1.5px;
+    margin-left: 3rem;
+    margin: 1rem 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: serif;
+    justify-content: space-evenly;
+}
+.membership h3
+{
+    word-spacing: 1px;
+    text-align: left;
+}
+
+/* Start: Footer */
+.footer
+{
+    padding: 70px 0 0;
+    background-color: rgb(30, 30, 30);
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1em;
+}
+.footer .footer-cont
+{
+    max-width: 1170px;
+    margin: auto;
+}
+.footer .footer-pages li
+{
+    list-style-type: none;
+}
+.footer .footer-row
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    color: rgb(225, 225, 225, 1);
+}
+.footer .footer-row > div:nth-child(1)
+{
+    width: 40%;
+} 
+.footer .footer-row > div
+{
+    width: 30%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-grow: 1;
+}
+.footer .footer-row li:hover
+{
+    transform: translateX(0);
+}
+.footer .footer-row ul a
+{
+    text-decoration: none;
+    color: rgb(225, 225, 225, .8);
+    margin-left: 15px;
+}
+.footer .footer-row .socialButton
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    width: fit-content;
+    margin-top: 20px;
+}
+.footer .footer-row .socialButton i
+{
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(225, 225, 225);
+    transition: .3s;
+    opacity: .5;
+    transform: translateY(0);
+}
+.footer .footer-row .socialButton i:hover
+{
+    opacity: 1;
+    transform: translateY(-5px);
+}
+.footer .copyright
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    height: 50px;
+    background-color: rgb(30, 30, 30);
+    color: rgb(225, 225, 225, .8);
+    font-size: .8em;
+}
+
+/*Start: Responsive part of footer */
+@media only screen and (max-width: 1170px)
+{
+    .footer .footer-row > div
+    {
+        width: 50% !important;
+        margin-bottom: 30px;
+
+    }
+
+@media only screen and (max-width: 574px)
+    { 
+       .footer .footer-row > div
+       {
+           width: 100% !important;
+       }
+    }
+}
+/*End: Responsive part of footer */
+
+/* End: Footer */
