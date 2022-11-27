@@ -412,7 +412,7 @@ span
 .slides
 {
     width: 500%;
-    height: 300px;
+    height: 500px;
     display: flex;
 }
 
@@ -711,7 +711,7 @@ span
     color: #FFFFFF;
     padding: 10px 0px 10px 0px;
     text-align: center;
-    border-radius: 15px 15px 15px 15px    ;
+    border-radius: 15px 15px 15px 15px;
 }
 .main
 {
@@ -730,7 +730,7 @@ form
 {
     margin-left: 25px;
     margin-top: 20px;
-    width: 125px;
+    width: 20%;
     color: white;
     font-size: 15px;
     font-weight: 600;
@@ -738,7 +738,9 @@ form
 .firstName
 {
     position: relative;
+    width: 30%;
     left: -50px;
+    margin: 3px;
     top: -15px;
     line-height: 30px;
     border-radius: 6px;
@@ -748,6 +750,8 @@ form
 .lastName
 {
     position: relative;
+    width: 30%;
+    margin: 3px;
     left: 200px;
     top: -50px;
     line-height: 30px;
