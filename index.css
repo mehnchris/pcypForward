@@ -21,7 +21,7 @@ header
 
 a
 {
-    color: black;
+    color: #FFFFFF;
     text-decoration: none;
     font-weight: bold;
     text-shadow: #fff;
@@ -284,6 +284,19 @@ hr
     text-align: left;
 }
 
+.video
+{
+    height: fit-content;
+    width: auto;
+}
+.video--video
+{
+    width: 100%;
+    height: 600px;
+    padding: 2rem;
+    align-content: center;
+}
+
 span
 {
     background: #fff;
@@ -392,6 +405,10 @@ span
     cursor: pointer;
     transition: 0.4 ease-in-out;
 }
+.info-list
+{
+    list-style: none;
+} 
 
 .slider
 {
@@ -595,6 +612,7 @@ span
 .hero h1
 {
     text-align: center;
+    color: #fff;
 }
 .membership
 {
@@ -605,6 +623,7 @@ span
     height: fit-content;
     justify-content: space-around;
     list-style: circle;
+    border-radius: 5%;
 }
 .membership-words
 {
@@ -630,13 +649,14 @@ span
 .membership--title
 {
     text-align: center;
-    text-decoration: underline;
     text-transform: capitalize;
     text-transform: uppercase;
+    border-radius: 50%;
 }
 .membership--title h1
 {
     justify-content: center;
+    color: #fff;
 }
 
 .membership h4
@@ -860,6 +880,7 @@ form
     outline: none; 
     overflow: hidden;
 }
+
 button
 {
     background-color: #0FA9EA;
