@@ -62,7 +62,7 @@
 
      <hr>
 
-    <div class="video">
+    <div class="video" id="who-we-are">
         <iframe  class="video--video" src="https://www.youtube.com/embed/v3k3t7uvPaI" title="Who we are" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 
         </iframe>
@@ -73,11 +73,7 @@
 
     </div>-->
     <hr>
-    <!--<div class="container">      
-                  
-        <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko.</p>
-      </div>
-    <hr> -->     
+  
     
 <!--Start: Entire 3 card display -->
     <div class="wrapper">
@@ -142,12 +138,12 @@
 <div class="slider"> <h1> Meet Our Board Members </h1>
     <div class="slides">
         <!--start: Radio button -->
-        <input type="radio" name="radio-button" id="radio1">
-        <input type="radio" name="radio-button" id="radio2">
-        <input type="radio" name="radio-button" id="radio3">
-        <input type="radio" name="radio-button" id="radio4">
-        <input type="radio" name="radio-button" id="radio5">
-        <input type="radio" name="radio-button" id="radio6">
+        <input class="slider-input" type="radio" name="radio-button" id="radio1">
+        <input class="slider-input" type="radio" name="radio-button" id="radio2">
+        <input class="slider-input" type="radio" name="radio-button" id="radio3">
+        <input class="slider-input" type="radio" name="radio-button" id="radio4">
+        <input class="slider-input" type="radio" name="radio-button" id="radio5">
+        <input class="slider-input" type="radio" name="radio-button" id="radio6">
         <!--End: Radio button -->
 
         <!--start: slide images --> 
@@ -157,17 +153,17 @@
             <div class="slide"> 
                 <img src="pcyp12.jpeg" alt=""> 
             </div>
-            <div class="slide"> 
+            <!--<div class="slide"> 
                 <img src="pcyp13.jpeg" alt="">  
+            </div>-->
+            <div class="slide"> 
+                <img src="pcyp17.jpeg" alt="">  
             </div>
             <div class="slide"> 
-                <img src="pcyp11.jpeg" alt="">  
+                <img src="pcyp18.jpeg" alt="">  
             </div>
             <div class="slide"> 
-                <img src="pcyp12.jpeg" alt="">  
-            </div>
-            <div class="slide"> 
-                <img src="pcyp13.jpeg" alt="">
+                <img src="pcyp19.jpeg" alt="">
             </div>
             
         <!--End: slide images-->
@@ -211,38 +207,22 @@
         </script>
 
 </div>
+<br>
+<br>
 <!-- End: Image slider -->
 
-<!--start: Opportunity -->
-<!--<div class="opportunity" id="opportunity">
-    <h1 class="opportunity-title"> Opportunity </h1>
-    <img src="pcyp8.png" class="opportunity-img" alt="pcyp8">
-    <li class="opportunity-list"> This is the kind of opportunitites we offer </li>
-    <li class="opportunity-list"> This is how we provide opportunitites </li>
-    <li class="opportunity-list"> this is the kind of opportunitites </li>
-</div>-->
-        
-<!--End: Opportunity -->
-<!--start: Membership -->
-        <!--link to membership signup1: https://youtu.be/00Thb3oPJ74
-            link to membership signup2: https://www.youtube.com/watch?v=JC86E5CfIrw
-            link to membership signup3: https://www.youtube.com/watch?v=gpM9hUKXLgk
-            link to membership signup4: https://www.youtube.com/watch?v=J4eqDaHN1Mg
-            link to membership signup5: https://www.youtube.com/watch?v=3FSNgLDjors
-        -->
-
-        <div class="membership" id="membership">
-            <div class="membership--title">
-                <h1> Become A Member </h1>
-            </div>
-            <div class="membership-words">
-                <!--<p class="membership-list-p"> Through Networking, PCYP is emerging as a leader in the community as we support our youth with groundbreaking oppertunities. Our mission is to make Shawnee an innovative city for young professionals to live, work and play.</p>-->
-                <li class="membership-list"> Complete our new member form - it’s quick and easy. </li>
-                <li class="membership-list"> Attend a New Member Launch event </li>
-                <li class="membership-list"> Start attending events </li>
-                <!--<p class="membership-list-p"> Join us in making Pottawatomie County awesome - membership is free, impact is infinite </p>-->
-            </div>
-        </div>
+<div class="membership" id="membership">
+    <div class="membership--title">
+        <h1> Become A Member </h1>
+    </div>
+    <div class="membership-words">
+        <!--<p class="membership-list-p"> Through Networking, PCYP is emerging as a leader in the community as we support our youth with groundbreaking oppertunities. Our mission is to make Shawnee an innovative city for young professionals to live, work and play.</p>-->
+        <li class="membership-list"> Complete our new member form - it’s quick and easy. </li>
+        <li class="membership-list"> Attend a New Member Launch event </li>
+        <li class="membership-list"> Start attending events </li>
+        <!--<p class="membership-list-p"> Join us in making Pottawatomie County awesome - membership is free, impact is infinite </p>-->
+    </div>
+</div>
 
                     <!--start: Registeration Form -->
             <div class="reg-form"><h1> Registration Form </h1> 
@@ -307,22 +287,23 @@
                 theme: "Midnight Blue",
                 calendarEvents: [
             {
-                id: 'Event 1', // Event's ID (required)
-                name: "New Year", // Event name (required)
-                date: "January/1/2020", // Event date (required)
-                description: " This is the first day of the new year",
-                type: "holiday", // Event type (required)
+                id: 'Shawnee Forward Comedy Roast', // Event's ID (required)
+                name: "Shawnee Forward Comedy Roast", // Event name (required)
+                date: "December/6/2022", // Event date (required)
+                description: " Join Shawnee Forward for their first ever comedy roast, roasting Rachael Melot. Ticket sales benefit Kiwanis holiday shopping for students ",
+                type: "Charity Event", // Event type (required)
                 everyYear: true // Same event every year (optional)
             },
             {
-                name: "New Member Launch",
-                badge: "04/13 - 04/15", // Event badge (optional)
-                date: ["October/25/2022", "October/25/2022"], // Date range
-                description: "Learn all about PCYP and how to get the most out of your membership.", // Event description (optional)
-                type: "event",
+                id: 'Mental Health',
+                name: "Mental Health",
+                date: ["December/13/2022", "December/13/2022"], // Date range
+                description: "Learn in 1 hour: Tools to cope with Mental Health during a crazy season. How Safe is our City Where are we investing.", // Event description (optional)
+                type: "Mental Health Awareness",
                 color: "#63d867" // Event custom color (optional)
             },
             {
+                id: 'Mental Health',
                 name: "New Member Launch",
                 badge: "04/13 - 04/15", // Event badge (optional)
                 date: ["July/26/2022", "July/26/2022"], // Date range
@@ -331,26 +312,35 @@
                 color: "#63d867" // Event custom color (optional)
             },
             {
-                name: "New Member Launch",
-                badge: "02/13 - 02/15", // Event badge (optional)
-                date: ["April/11/2022", "April/11/2022"], // Date range
-                description: "Learn all about PCYP and how to get the most out of your membership. ", // Event description (optional)
-                type: "event",
+                id: 'Because it matters',
+                name: "Diversity, Equity & Inclusion",
+                date: ["December/20/2022", "December/20/2022"], // Date range
+                description: "Learn in 1 hour: What OBU is doing for DEI efforts and how to incorporate it into your org. How Safe is our City Where are we investing", // Event description (optional)
+                type: "Event",
                 color: "#63d867" // Event custom color (optional)
             },
             {
+                id: 'Holiday',
                 name: "Christmas Day",
-                badge: "02/13 - 02/15", // Event badge (optional)
                 date: ["December/25/2022", "December/25/2022"], // Date range
                 description: "It is Christmas Day", // Event description (optional)
                 type: "event",
                 color: "#63d867" // Event custom color (optional)
             },
             {
-                name: "Happy Thanksgiving",
-                badge: "02/13 - 02/15", // Event badge (optional)
-                date: ["November/24/2022", "November/24/2022"], // Date range
-                description: "Dont eat too much", // Event description (optional)
+                id: 'Holiday',
+                name: "New Years",
+                date: ["Janunary,1,2023", "Janunary,1,2023"], // Date range
+                description: "Have a happy and blessed new years", // Event description (optional)
+                type: "event",
+                color: "#63d867", // Event custom color (optional)
+                everyYear: true
+            },
+            {
+                id: 'Girls have fun',
+                name: "Girls Night Out",
+                date: ["December 17, 2022", "December 17, 2022"], // Date range
+                description: "Girls Night Out, the #1 Ladies Night Event Is Coming to Shawnee! Limited Tickets On Sale NOW! Open to 21+ Doors open at 7pm", // Event description (optional)
                 type: "event",
                 color: "#63d867" // Event custom color (optional)
             },
@@ -358,13 +348,28 @@
                 })
                     })
         </script>
-        
         <!--End: Calendar -->
+<br>
+<br>
+<br>
+        <div class="container"> <h2>How we are involved in the community</h2> 
+            <div class="carousel">
+                <div class="da-image"><span class="da-image--span"><img src="ypwork1.jpeg" alt=""></span></div>
+                <div class="da-image"><span class="da-image--span"><img src="ypwork2.jpeg" alt=""></span></div>
+                <div class="da-image"><span class="da-image--span"><img src="ypwork3.jpeg" alt=""></span></div>
+                <div class="da-image"><span class="da-image--span"><img src="ypwork4.jpeg" alt=""></span></div>
+                <div class="da-image"><span class="da-image--span"><img src="ypwork5.jpeg" alt=""></span></div>
+                <div class="da-image"><span class="da-image--span"><img src="ypwork6.jpeg" alt=""></span>
+        </div>  <div class="da-image"><span class="da-image--span"><img src="ypwork7.jpeg" alt=""></span></div>
+                <div class="da-image"><span class="da-image--span"><img src="ypwork8.jpeg" alt=""></span></div>
+                <div class="da-image"><span class="da-image--span"><img src="pcyp18.jpeg" alt=""></span></div>
+            </div>
+        </div>
 
-
-
-        
-
+<br>
+<br>
+<br>
+<hr>
 
 
 <!--Start: Footer -->
@@ -373,7 +378,7 @@
         <div class="footer-row">
             <div>
                 <h2><a href="index.html"> PCYP </a></h2>
-                <p> Developed by Chris Mehn. I am a passionate Jr developer who is seeking employment as a software Developer.</p>
+                <p> Programmed by Chris Mehn, contributors: Greyson David and Katelyn Burks. I am a passionate Jr developer who is seeking employment as a software Developer upon graduation.</p>
             </div>
             <div class="footer-pages">
                 <h4> Menu </h4>

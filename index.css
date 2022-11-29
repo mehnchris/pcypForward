@@ -405,6 +405,7 @@ span
     cursor: pointer;
     transition: 0.4 ease-in-out;
 }
+
 .info-list
 {
     list-style: none;
@@ -412,11 +413,11 @@ span
 
 .slider
 {
-    width: 90%;
-    height: 500px;
+    width: 100%;
+    height: 700px;
     border-radius: 10px;
     overflow: hidden;
-    margin: 1rem;
+    padding: 10px;
 }
 
 .slider h1
@@ -424,16 +425,17 @@ span
     text-transform: capitalize;
     text-shadow: #50c5d3;
     text-align: center;
-    margin: 1rem;
+    padding: 15px;
+    color: #0FA9EA;
 }
 .slides
 {
     width: 500%;
-    height: 500px;
+    height: 700px;
     display: flex;
 }
 
-.slides input
+.slider-input
 {
     display: none;
 }
@@ -444,20 +446,20 @@ span
 }
 .slide__first
 {
-    margin: 4rem;
+    padding: 10px;
 }
 
 .slide img
 {
-    width: 90%;
+    width: 100%;
     height: 700px;
 }
 
 .navigation__manual /* want to have the little buttons on the bottom but they are not positioning how I want them to */
 {
-    position: absolute;
-    width: 50%;
-    margin-top: -10px;
+    position: relative;
+    width: 80%;
+    margin-top: -110px;
     display: flex;
     justify-content: center;
     
@@ -476,7 +478,7 @@ span
 }
 .manual-btn:hover
 {
-    background: #0FA9EA;
+    background: #ffffff;
 }
 #radio1:checked ~ .first
 {
@@ -634,8 +636,6 @@ span
     margin: 1rem;
     text-align: center;
     position: relative;
-
-
 }
 .membership-list
 {
@@ -651,7 +651,8 @@ span
     text-align: center;
     text-transform: capitalize;
     text-transform: uppercase;
-    border-radius: 50%;
+    border-radius: 5%;
+    justify-content: center;
 }
 .membership--title h1
 {
@@ -676,7 +677,7 @@ span
 }
 
 /*start: Networking*/
-.networking
+/*.networking
 {
     width: auto;
     justify-content: center;
@@ -719,7 +720,7 @@ span
 {
     word-spacing: 1px;
     text-align: left;
-}
+}*/
 /*End: Networking*/
 
 /*start: Registration */
@@ -900,6 +901,120 @@ button:hover
     background-color: #0f67ea;
 }
 /*End: Registration */
+
+/* Start: of rotating images */
+
+.container
+{
+    position: relative;
+    width: 450px;
+    margin: 100px auto 30% auto;
+    perspective: 1000px;
+    background-color: #6db3d1;
+    
+}
+.container h2
+{
+    text-align: center;
+    color: #E5ECEF;
+    background-color: #0FA9EA;
+}
+.carousel
+{
+    position: relative;
+    width: 100%;
+    height: 90%;
+    transform-style: preserve-3d;
+    animation: rotate360 60s infinite forwards linear;
+}
+.da-image
+{
+    position: absolute;
+    width: 300px;
+    height: 187px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgb(0, 0, 0, 0.5);
+    display: flex;
+}
+.da-image--span
+{
+    margin: auto;
+    font-size: 2rem;
+}
+.da-image--span img
+{
+    position: absolute;
+    width: 300px;
+    height: 187px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgb(0, 0, 0, 0.5);
+    display: flex;
+}
+@keyframes rotate360
+{
+    form
+    {
+        transform: rotateY(0deg);
+    }
+    to 
+    {
+        transform: rotateY(-360deg);
+    }
+}
+.da-image:nth-child(1)
+{
+    background-image: url("pcyp.10");
+    transform: rotateY(0deg) translateZ(430px);
+}
+.da-image:nth-child(2)
+{
+    background-image: url("pcyp.11");
+    transform: rotateY(40deg) translateZ(430px);
+    
+}
+.da-image:nth-child(3)
+{
+    background-image: url("/pcyp12.jpeg");
+    transform: rotateY(80deg) translateZ(430px);
+}
+.da-image:nth-child(4)
+{
+    background-image: url("/pcyp13.jpeg");
+    transform: rotateY(120deg) translateZ(430px);
+}
+.da-image:nth-child(5)
+{
+    background-image: url("/pcyp14.jpeg");
+    transform: rotateY(160deg) translateZ(430px);
+}
+.da-image:nth-child(6)
+{
+    background-image: url("/pcyp15.jpeg");
+    transform: rotateY(200deg) translateZ(430px);
+}
+.da-image:nth-child(7)
+{
+    background-image: url("/pcyp16.jpeg");
+    transform: rotateY(240deg) translateZ(430px);
+}
+.da-image:nth-child(8)
+{
+    background-image: url("/pcyp17.jpeg");
+    transform: rotateY(280deg) translateZ(430px);
+}
+.da-image:nth-child(9)
+{
+    background-image: url("/pcyp18.jpeg");
+    transform: rotateY(320deg) translateZ(430px);
+}
+/* End: of rotating images */
+
 
 
 
